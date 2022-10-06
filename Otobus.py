@@ -1,7 +1,6 @@
-"""Koray Kılıç 
+"""Koray KILIÇ 
 20217170060
-1.grup"""
-
+1.GRUP"""
 
 class Otobus:
 
