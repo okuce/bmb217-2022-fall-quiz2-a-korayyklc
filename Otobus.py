@@ -12,7 +12,7 @@ class Otobus:
         self.dolu_koltuk = 0
         self.bos_koltuk = kapasite
 
-    def bilet_al(self):
+    def bilet_sat(self):
         self.dolu_koltuk += 1
         self.bos_koltuk -= 1
 
