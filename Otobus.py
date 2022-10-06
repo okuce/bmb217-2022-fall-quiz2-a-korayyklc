@@ -1,18 +1,24 @@
+"""Koray Kılıç 
+20217170060
+1.grup"""
+
+
 class Otobus:
-    """Otobus bilet satis takip sinifi"""
-    
 
-    def bilet_sat(self):
-        """Otobusteki dolu koltuk sayisini 1 artirir"""
-        
-    
+    def _init_(self, plaka, gidis, gelis, kapasite):
+        self.plaka = plaka
+        self.gelis = gelis
+        self.gidis = gidis
+        self.dolu_koltuk = 0
+        self.bos_koltuk = kapasite
+
+    def bilet_al(self):
+        self.dolu_koltuk += 1
+        self.bos_koltuk -= 1
+
     def bilet_iade(self):
-        """Otobusteki dolu koltuk sayisini 1 azaltir"""
-        
+        self.bos_koltuk += 1
+        self.dolu_koltuk -= 1
 
-    
     def durum_yaz(self):
-        """Otobusun guzergahini, plakasini,bos ve dolu koltuk sayisini yazdirir"""
-        
-
-
+        print(self.gidis + "," + self.gelis + "," + self.plaka + "," + self.bos_koltuk + "," + self.dolu_koltuk)
